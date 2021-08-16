@@ -1,0 +1,6 @@
+Cargo.lock
+**/*.rs.bk
+/*-dump.txt
+/*.so
+/target/
+/test-ledger/

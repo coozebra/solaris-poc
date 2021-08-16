@@ -1,0 +1,31 @@
+[package]
+name = "poc-program"
+version = "0.1.0"
+license = "WTFPL"
+publish = false
+edition = "2018"
+
+[features]
+no-entrypoint = []
+test-bpf = []
+
+[dependencies]
+solana-program = "1.6.9"
+thiserror = "1.0.24"
+spl-token-lending = {path = "../lending_program", features = ["no-entrypoint"]}
+spl-token = {version = "3.1.1", features = ["no-entrypoint"]}
+arrayref = "0.3.6"
+pyth-client = "0.1.1"
+
+[dev-dependencies]
+assert_matches = "1.5.0"
+base64 = "0.13"
+log = "0.4.14"
+proptest = "0.10"
+solana-program-test = "1.6.7"
+solana-sdk = "1.6.7"
+serde = "1.0"
+serde_yaml = "0.8"
+
+[lib]
+crate-type = ["cdylib", "lib"]
