@@ -1,6 +1,6 @@
 # Solaris-poc
 
-Solaris Proof of Concept Solana Integration with Saffron Finance
+Solaris Proof of Concept
 
 ## Development
 
